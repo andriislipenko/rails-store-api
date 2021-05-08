@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+    before_action :authorized
+
     def index
         @hello_message = { message: 'Hello, API World!' }
 
