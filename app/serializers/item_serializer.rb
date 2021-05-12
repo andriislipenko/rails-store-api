@@ -4,6 +4,6 @@ class ItemSerializer < ActiveModel::Serializer
     attributes :id, :name, :image_url
 
     def image_url
-        rails_blob_path(object.image, disposition: "attachment", only_path: true)
+        url_for(object.image)
     end
 end
