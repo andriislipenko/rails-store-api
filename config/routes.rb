@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  root 'home#index'
+    root 'items#index'
 
-  get 'home', to: 'home#index'
+    get 'items', to: 'items#index'
 
-  post 'login', to: 'users#login'
-	post 'sign_up', to: 'users#create'
+    post 'login', to: 'users#login'
+    post 'sign_up', to: 'users#create'
 end
